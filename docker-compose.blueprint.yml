@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+
+  cockroach:
+    image: cockroachdb/cockroach:beta-20161110
+    volumes:
+      - './certs:/certs'
+    environment:
+      - COCKROACH_HOST=
+      - COCKROACH_PORT=
+      - COCKROACH_USER=
