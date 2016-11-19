@@ -1,0 +1,16 @@
+{
+  "name": "cockroachdb-console",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sql": "docker-compose run cockroach sql",
+    "create:node": "./scripts/createNodeCertificate.sh",
+    "create:node": "./scripts/createNodeCertificate.sh",
+    "create:client": "./scripts/createClientCertificate.sh",
+    "get:certificates": "docker-compose run cockroach "
+  },
+  "author": "Giacomo Triggiano <giacomotriggiano@gmail.com>",
+  "license": "MIT"
+}
