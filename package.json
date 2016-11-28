@@ -5,10 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sql": "docker-compose run cockroach sql",
-    "create:node": "./scripts/createNodeCertificate.sh",
-    "create:node": "./scripts/createNodeCertificate.sh",
-    "create:client": "./scripts/createClientCertificate.sh",
+    "sql:client": "docker-compose run cockroach sql",
+    "create:node:cert": "./scripts/createNodeCertificate.sh",
+    "create:client:cert": "./scripts/createClientCertificate.sh",
+    "create:user": "./scripts/createDBUser.sh",
     "get:certificates": "docker-compose run cockroach "
   },
   "author": "Giacomo Triggiano <giacomotriggiano@gmail.com>",
