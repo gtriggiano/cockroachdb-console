@@ -2,11 +2,14 @@ version: '2'
 
 services:
 
-  cockroach:
-    image: cockroachdb/cockroach:beta-20161110
+  cockroachdb:
+    image: cockroachdb/cockroach:beta-20170112
     volumes:
       - './certs:/certs'
     environment:
-      - COCKROACH_HOST=
-      - COCKROACH_PORT=
-      - COCKROACH_USER=
+      - COCKROACH_HOST=your.cockroach.io
+      # - COCKROACH_PORT=26257
+      - COCKROACH_CA_CERT=/certs/ca.crt
+      - COCKROACH_CERT=/certs/clients/root.crt
+      - COCKROACH_KEY=/certs/clients/root.key
+      - COCKROACH_USER=root
