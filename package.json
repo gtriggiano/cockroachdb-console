@@ -5,11 +5,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sql:client": "docker-compose run cockroach sql",
-    "create:node:cert": "./scripts/createNodeCertificate.sh",
-    "create:client:cert": "./scripts/createClientCertificate.sh",
-    "create:user": "./scripts/createDBUser.sh",
-    "get:certificates": "docker-compose run cockroach "
+    "sql:client": "./commands/sqlClient.sh",
+    "create:ca:cert": "./commands/createCACertificate.sh",
+    "create:node:cert": "./commands/createNodeCertificate.sh",
+    "create:client:cert": "./commands/createClientCertificate.sh",
+    "inspect:certificate": "./commands/inspectCertificate.sh"
   },
   "author": "Giacomo Triggiano <giacomotriggiano@gmail.com>",
   "license": "MIT"
