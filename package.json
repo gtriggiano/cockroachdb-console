@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sql:client": "docker-compose run cockroachdb sql",
-    "create:ca:certificate": "./commands/createCACertificate.sh",
+    "cmd": "./commands/execCommand.sh",
+    "sql": "./commands/sql.sh",
     "create:node:certificate": "./commands/createNodeCertificate.sh",
     "create:client:certificate": "./commands/createClientCertificate.sh",
     "inspect:certificate": "./commands/inspectCertificate.sh"
